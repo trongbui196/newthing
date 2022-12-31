@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main {
+            margin-top: 10% !important;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        .aa {
+            width: 30px;
+        }
+
+        input {
+            height: 30px;
+        }
+
+        input[type=button] {
+            height: 35px;
+            width: 35px;
+        }
+    </style>
+    <script async>
+
+        function incrementValue1() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            var val1=parseInt(document.getElementById('number5').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value+=2;
+            document.getElementById('number1').value = value;
+            document.getElementById('number5').value = val1+2;
+        }
+        function incrementValue2() {
+            var value = parseInt(document.getElementById('number2').value, 10);
+            var val1=parseInt(document.getElementById('number5').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value+=2;
+            document.getElementById('number2').value = value;
+            document.getElementById('number5').value = val1+2;
+        }
+        function incrementValue3() {
+            var value = parseInt(document.getElementById('number3').value, 10);
+            var val1=parseInt(document.getElementById('number5').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value+=2;
+            document.getElementById('number3').value = value;
+            document.getElementById('number5').value = val1+2;
+        }
+        function incrementValue4() {
+            var value = parseInt(document.getElementById('number4').value, 10);
+            var val1=parseInt(document.getElementById('number5').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value+=2;
+            document.getElementById('number4').value = value;
+            document.getElementById('number5').value = val1+2;
+        }
+        function decrementValue1() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            var val1=parseInt(document.getElementById('number5').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value-=2;
+            document.getElementById('number1').value = value;
+            document.getElementById('number5').value = val1-2;
+        }
+        function decrementValue2() {
+            var value = parseInt(document.getElementById('number2').value, 10);
+            var val1=parseInt(document.getElementById('number5').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value-=2;
+            document.getElementById('number2').value = value;
+            document.getElementById('number5').value = val1-2;
+        }
+        function decrementValue3() {
+            var value = parseInt(document.getElementById('number3').value, 10);
+            var val1=parseInt(document.getElementById('number5').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value-=2;
+            document.getElementById('number3').value = value;
+            document.getElementById('number5').value = val1-2;
+        }
+        function decrementValue4() {
+            var value = parseInt(document.getElementById('number4').value, 10);
+            var val1=parseInt(document.getElementById('number5').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value-=2;
+            document.getElementById('number4').value = value;
+            document.getElementById('number5').value = val1-2;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="inp1">
+            <input type="text" name="" value="trong">
+            <input class="aa" type="text" id="number1" value="0" />
+            <input type="button" onclick="incrementValue1()" value="+" />
+            <input type="button" onclick="decrementValue1()" value="-" />
+        </div>
+        <hr>
+        <div class="inp2">
+            <input type="text" name="" value="uien">
+            <input class="aa" type="text" id="number2" value="0" />
+            <input type="button" onclick="incrementValue2()" value="+" />
+            <input type="button" onclick="decrementValue2()" value="-" />
+        </div>
+        <hr>
+        <div class="inp3">
+            <input type="text" name="" value="fun">
+            <input class="aa" type="text" id="number3" value="0" />
+            <input type="button" onclick="incrementValue3()" value="+" />
+            <input type="button" onclick="decrementValue3()" value="-" />
+        </div>
+        <hr>
+        <div class="inp4">
+            <input type="text" name="" value="khoi">
+            <input class="aa" type="text" id="number4" value="0" />
+            <input type="button" onclick="incrementValue4()" value="+" />
+            <input type="button" onclick="decrementValue4()" value="-" />
+        </div><br>
+        <input class="aa" type="text" id="number5" value="0" />
+
+    </div>
+</body>
